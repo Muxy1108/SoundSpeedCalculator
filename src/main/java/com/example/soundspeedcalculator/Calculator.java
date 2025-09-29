@@ -18,7 +18,8 @@ public class Calculator {
             Diameter = input.nextDouble();
             Frequency = input.nextDouble();
 
-            double SoundSpeed = 0.02 * PI * Frequency * sqrt(4 * (OriginMass - Mass) * (Length + 0.85 * Diameter) /(PI * Diameter * Diameter));
+            double SoundSpeed = 0.02 * PI * Frequency * sqrt(4 * (OriginMass - Mass)
+                    * (Length + 0.85 * Diameter) /(PI * Diameter * Diameter));
             double Error = (SoundSpeed - 346.3) / 346.3 * 100;
             System.out.printf("SoundSpeed = %.2f m/s, Error = %.2f%%\n",SoundSpeed,Error);
 
